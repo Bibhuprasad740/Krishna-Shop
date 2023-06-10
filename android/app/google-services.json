@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "942247208101",
+    "project_id": "krishna-electronics-7f8e2",
+    "storage_bucket": "krishna-electronics-7f8e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942247208101:android:c695554c6451c72bf6994c",
+        "android_client_info": {
+          "package_name": "cruzer.blade.krishna_electronics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942247208101-4ostnva4iacpmpv961886e4bcqr6ntdm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cruzer.blade.krishna_electronics",
+            "certificate_hash": "17755c894accd4bc25ad79200631a96ce08e5326"
+          }
+        },
+        {
+          "client_id": "942247208101-9feulbjndnpiehsvd235se59cttgg98f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVpyedi2eoHOF0TczuTKDGsdFcrNDYVv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942247208101-9feulbjndnpiehsvd235se59cttgg98f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
