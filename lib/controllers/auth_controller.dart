@@ -1,9 +1,10 @@
 import 'dart:developer';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:krishna_electronics/controllers/firestore_controller.dart';
-import 'package:krishna_electronics/models/user_model.dart';
-import 'package:krishna_electronics/utilities/constants.dart';
+
+import '../models/user_model.dart';
+import '../utilities/constants.dart';
+import './firestore_controller.dart';
 
 class AuthController {
   final FirebaseAuth _auth = FirebaseAuth.instance;
