@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class CategoryModel {
-  String categoryName, imageUrl;
+  final String categoryName, imageUrl;
 
   CategoryModel({
     required this.categoryName,

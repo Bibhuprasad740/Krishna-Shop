@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../models/category_model.dart';
+import '../models/front_page_banner_model.dart';
 import '../models/user_model.dart';
 
 class FirestoreController {
@@ -15,21 +16,26 @@ class FirestoreController {
         .set(userModel.toJson());
   }
 
-  Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>>
-      getCategories() async {
-    List<QueryDocumentSnapshot<Map<String, dynamic>>> categories = [];
+  Future<List<CategoryModel>> getCategories() async {
+    List<CategoryModel> categories = [];
     var categoriesSnapshot = await firestore.collection('categories').get();
-    categories = categoriesSnapshot.docs;
+    for (int i = 0; i < categoriesSnapshot.docs.length; i++) {
+      CategoryModel categoryModel =
+          CategoryModel.fromSnap(categoriesSnapshot.docs[i]);
+      categories.add(categoryModel);
+    }
     return categories;
   }
 
   // for test
-  Future uploadByAdminRights({required CategoryModel categoryModel}) async {
+  Future uploadByAdminRights(
+      {required FrontPageBannerModel frontPageBannerModel,
+      required String adType}) async {
     try {
       await firestore
-          .collection('categories')
-          .doc(categoryModel.categoryName)
-          .set(categoryModel.toJson());
+          .collection(adType)
+          .doc('${adType}_${frontPageBannerModel.productId}')
+          .set(frontPageBannerModel.toJson());
     } catch (e) {
       log(
         'Catch block in FirestoreController().adminRights(), ${e.toString()}',

@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../../../controllers/auth_controller.dart';
 import '../../../utilities/constants.dart';
 import '../../../utilities/stock_colors.dart';
 import '../../../utilities/utility_functions.dart';
@@ -24,7 +23,6 @@ class SignInScreen extends StatefulWidget {
 class _SignInScreenState extends State<SignInScreen> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  final AuthController authController = AuthController();
   bool isLoading = false;
 
   void nativateToSignUpScreen() async {
@@ -40,7 +38,7 @@ class _SignInScreenState extends State<SignInScreen> {
       isLoading = true;
     });
 
-    String result = await authController.signIn(
+    String result = await C.authController.signIn(
       email: _emailController.text,
       password: _passwordController.text,
     );

@@ -4,11 +4,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import '../models/user_model.dart';
 import '../utilities/constants.dart';
-import './firestore_controller.dart';
 
 class AuthController {
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  final FirestoreController _firestoreController = FirestoreController();
 
   // SIGN UP METHOD
   Future<String> signUpUser({
@@ -43,7 +41,7 @@ class AuthController {
           isAdmin: false,
           isVerified: false,
         );
-        await _firestoreController.uploadUserDetails(userModel: userModel);
+        await C.firestoreController.uploadUserDetails(userModel: userModel);
         result = C.success;
       } on FirebaseAuthException catch (e) {
         result = e.message.toString();

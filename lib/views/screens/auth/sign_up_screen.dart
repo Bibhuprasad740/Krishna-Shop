@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../controllers/auth_controller.dart';
 import '../../../utilities/constants.dart';
 import '../../../utilities/stock_colors.dart';
 import '../../../utilities/utility_functions.dart';
@@ -23,14 +22,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _phoneNumberController = TextEditingController();
   final TextEditingController _nameController = TextEditingController();
-  final AuthController authController = AuthController();
   bool isLoading = false;
 
   void signUpUser() async {
     setState(() {
       isLoading = true;
     });
-    String result = await authController.signUpUser(
+    String result = await C.authController.signUpUser(
       name: _nameController.text,
       email: _emailController.text,
       password: _passwordController.text,

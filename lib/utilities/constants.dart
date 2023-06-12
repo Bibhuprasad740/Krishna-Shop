@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../controllers/auth_controller.dart';
+import '../controllers/firestore_controller.dart';
 import '../views/screens/home/home_screen.dart';
 import '../views/screens/home/more_screen.dart';
 
@@ -18,6 +20,10 @@ class C {
     Center(child: Text('Cart Screen')),
     MoreScreen(),
   ];
+
+  // controllers
+  static var firestoreController = FirestoreController();
+  static var authController = AuthController();
 
   static const double kAppBarHeight = 80;
 

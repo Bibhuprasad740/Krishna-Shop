@@ -18,8 +18,12 @@ class SC {
     Color(0xffebecee),
   ];
 
+  // static const gradientLight = [
+  //   Color(0xffa2e0eb),
+  //   Color.fromARGB(255, 200, 228, 218),
+  // ];
   static const gradientLight = [
-    Color(0xffa2e0eb),
-    Color.fromARGB(255, 200, 228, 218),
+    Color.fromARGB(255, 246, 217, 72),
+    Color.fromARGB(255, 232, 232, 60),
   ];
 }

@@ -58,7 +58,7 @@ class CustomSearchBar extends StatelessWidget implements PreferredSizeWidget {
                   color: SC.accent1.withOpacity(0.2),
                   blurRadius: 8,
                   spreadRadius: 1,
-                  offset: const Offset(5, 5),
+                  offset: const Offset(2, 2),
                 ),
               ]),
               child: TextField(
