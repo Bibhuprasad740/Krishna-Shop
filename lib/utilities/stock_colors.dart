@@ -4,7 +4,7 @@ class SC {
   // APP COLORS
   static const accent1 = Colors.black;
   static const accent2 = Colors.white;
-  static const background = Colors.white;
+  static const background = Color.fromARGB(255, 229, 228, 228);
   static const border = Colors.grey;
   static const error = Color.fromARGB(255, 201, 14, 0);
   static const divider = Colors.grey;

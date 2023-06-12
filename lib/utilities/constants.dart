@@ -25,15 +25,15 @@ class C {
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png";
 
   static const List<String> categoriesList = [
-    "Prime",
-    "Mobiles",
-    "Fashion",
+    "Fan",
+    "Grinder",
+    "Bulb",
     "Electronics",
+    "Induction",
+    "Speaker",
     "Home",
-    "Fresh",
-    "Appliances",
-    "Books, Toys",
-    "Essential"
+    "Kitchen",
+    "Basic"
   ];
 
   static const List<String> categoryLogos = [
@@ -48,7 +48,7 @@ class C {
     "https://m.media-amazon.com/images/I/11M0jYc-tRL._SX90_SY90_.png",
   ];
 
-  static const List<String> largeAds = [
+  static const List<String> frontPageBanner = [
     "https://m.media-amazon.com/images/I/51QISbJp5-L._SX3000_.jpg",
     "https://m.media-amazon.com/images/I/61jmYNrfVoL._SX3000_.jpg",
     "https://m.media-amazon.com/images/I/612a5cTzBiL._SX3000_.jpg",

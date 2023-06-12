@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../utilities/constants.dart';
 import '../utilities/stock_colors.dart';
+import '../views/screens/home/search_screen.dart';
 
 class ScreenLayout extends StatefulWidget {
   const ScreenLayout({Key? key}) : super(key: key);
@@ -41,7 +42,13 @@ class ScreenLayoutState extends State<ScreenLayout> {
         children: C.screens,
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (_) => SearchScreen(),
+            ),
+          );
+        },
         backgroundColor: SC.accent1,
         child: const Icon(Icons.search),
       ),
@@ -58,8 +65,6 @@ class ScreenLayoutState extends State<ScreenLayout> {
           Icons.density_medium,
         ],
         activeIndex: pageIndex,
-        leftCornerRadius: 10,
-        rightCornerRadius: 10,
         gapLocation: GapLocation.center,
       ),
     );

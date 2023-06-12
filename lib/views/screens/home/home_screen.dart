@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../widgets/categories_list.dart';
 import '../../widgets/custom_search_bar_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,6 +13,11 @@ class HomeScreen extends StatelessWidget {
         appBar: CustomSearchBar(
           isReadOnly: true,
           hasBackButton: false,
+        ),
+        body: Column(
+          children: [
+            CategoriesList(),
+          ],
         ),
       ),
     );
