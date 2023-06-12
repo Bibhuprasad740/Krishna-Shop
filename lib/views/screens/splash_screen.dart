@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:krishna_electronics/utilities/constants.dart';
-import 'package:krishna_electronics/utilities/stock_colors.dart';
-import 'package:krishna_electronics/utilities/utility_functions.dart';
-import 'package:krishna_electronics/views/screens/auth/sign_in_screen.dart';
+
+import '../../utilities/constants.dart';
+import '../../utilities/stock_colors.dart';
+import '../../utilities/utility_functions.dart';
+import './auth/sign_in_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

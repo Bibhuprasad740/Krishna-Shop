@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:krishna_electronics/utilities/stock_colors.dart';
+
+import '../../utilities/stock_colors.dart';
 
 class CustomField extends StatefulWidget {
   final String title, hintText;

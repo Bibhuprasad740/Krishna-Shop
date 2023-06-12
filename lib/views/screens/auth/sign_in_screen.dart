@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:krishna_electronics/views/screens/auth/sign_up_screen.dart';
 
 import '../../../controllers/auth_controller.dart';
 import '../../../utilities/constants.dart';
@@ -13,6 +12,7 @@ import '../../widgets/custom_divider.dart';
 import '../../widgets/custom_field.dart';
 import '../../widgets/custom_progress_indicator.dart';
 import '../../widgets/social_button.dart';
+import './sign_up_screen.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({Key? key}) : super(key: key);

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:krishna_electronics/utilities/utility_functions.dart';
-import 'package:krishna_electronics/views/widgets/custom_loading_spinner.dart';
+
+import '../../utilities/utility_functions.dart';
+import './custom_loading_spinner.dart';
 
 class CustomButton extends StatelessWidget {
   final Widget child;

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:krishna_electronics/utilities/stock_colors.dart';
+
+import './stock_colors.dart';
 
 class Utils {
   static Size getScreenSize(BuildContext context) {

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../views/screens/home/home_screen.dart';
+import '../views/screens/home/more_screen.dart';
+
 // C stands for constants
 class C {
   //background images
@@ -10,10 +13,10 @@ class C {
 
   // bottom bar screens
   static const List<Widget> screens = [
-    Center(child: Text('Home Screen')),
+    HomeScreen(),
     Center(child: Text('Account Screen')),
     Center(child: Text('Cart Screen')),
-    Center(child: Text('More Screen'))
+    MoreScreen(),
   ];
 
   static const double kAppBarHeight = 80;

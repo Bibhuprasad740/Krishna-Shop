@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:krishna_electronics/utilities/stock_colors.dart';
+
+import '../../utilities/stock_colors.dart';
 
 class CustomDivider extends StatelessWidget {
   final double height;

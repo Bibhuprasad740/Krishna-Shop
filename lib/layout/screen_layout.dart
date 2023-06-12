@@ -1,8 +1,9 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:krishna_electronics/utilities/constants.dart';
-import 'package:krishna_electronics/utilities/stock_colors.dart';
+
+import '../utilities/constants.dart';
+import '../utilities/stock_colors.dart';
 
 class ScreenLayout extends StatefulWidget {
   const ScreenLayout({Key? key}) : super(key: key);
@@ -57,8 +58,8 @@ class ScreenLayoutState extends State<ScreenLayout> {
           Icons.density_medium,
         ],
         activeIndex: pageIndex,
-        leftCornerRadius: 30,
-        rightCornerRadius: 30,
+        leftCornerRadius: 10,
+        rightCornerRadius: 10,
         gapLocation: GapLocation.center,
       ),
     );
