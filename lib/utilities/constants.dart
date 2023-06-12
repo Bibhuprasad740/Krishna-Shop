@@ -69,11 +69,11 @@ class C {
     "https://m.media-amazon.com/images/I/11kOjZtNhnL._SS70_.png",
   ];
 
-  static const List<String> adItemNames = [
-    "Amazon Pay",
-    "Recharge",
-    "Rewards",
-    "Pay Bills"
+  static const List<String> smallAdNames = [
+    "Orders",
+    "Recently Viewed",
+    "New",
+    "Offers Zone",
   ];
 
 //Dont even attemp to scroll to the end of this manually lmao

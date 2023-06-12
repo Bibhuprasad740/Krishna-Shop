@@ -41,7 +41,7 @@ class _CategoriesListState extends State<CategoriesList> {
       width: double.infinity,
       margin: const EdgeInsets.only(top: 10),
       decoration: BoxDecoration(
-        color: SC.accent2,
+        color: SC.accent3,
         boxShadow: [
           BoxShadow(
             blurRadius: 8,

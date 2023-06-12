@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:krishna_electronics/views/widgets/banner_ad.dart';
+import 'package:krishna_electronics/views/widgets/utility_field.dart';
 
 import '../../widgets/categories_list.dart';
 import '../../widgets/custom_search_bar_widget.dart';
@@ -14,10 +16,16 @@ class HomeScreen extends StatelessWidget {
           isReadOnly: true,
           hasBackButton: false,
         ),
-        body: Column(
-          children: [
-            CategoriesList(),
-          ],
+        body: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              FrontPageBanner(),
+              CategoriesList(),
+              UtilityField(),
+              SizedBox(height: 150),
+            ],
+          ),
         ),
       ),
     );

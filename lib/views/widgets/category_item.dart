@@ -19,9 +19,8 @@ class CategoryItem extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onTap,
         style: ElevatedButton.styleFrom(
-          backgroundColor: SC.accent2,
+          backgroundColor: SC.accent1.withOpacity(0.0),
           padding: const EdgeInsets.all(0),
-          surfaceTintColor: SC.accent1,
           elevation: 0,
         ),
         child: Container(
