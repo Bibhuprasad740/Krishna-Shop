@@ -7,11 +7,11 @@ class SC {
   static const accent3 = Colors.amber;
   static const background = Color.fromARGB(255, 229, 228, 228);
   static const border = Colors.grey;
-  static const error = Color.fromARGB(255, 201, 14, 0);
+  static const error = Color.fromARGB(255, 161, 13, 2);
   static const divider = Colors.grey;
 
   //SOCIAL MEDIA ICON COLORS
-  static const google = Colors.red;
+  static const google = Color.fromARGB(255, 161, 13, 2);
   static const facebook = Colors.blue;
 
   static const gradient = [

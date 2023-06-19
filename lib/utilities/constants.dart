@@ -76,6 +76,11 @@ class C {
     "Offers Zone",
   ];
 
+  static const discount70 = [
+    'https://i.pinimg.com/originals/64/59/94/6459941018d3b87261a78cf6e8e14dd6.jpg',
+    'https://images.unsplash.com/photo-1555470100-1728256970aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+  ];
+
 //Dont even attemp to scroll to the end of this manually lmao
   static const String amazonLogo =
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png";

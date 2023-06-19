@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../utilities/stock_colors.dart';
+import '../../../utilities/stock_colors.dart';
 
 class CategoryItem extends StatelessWidget {
   final String imageUrl, title;

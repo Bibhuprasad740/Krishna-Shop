@@ -25,7 +25,7 @@
         );
       }
 
-    | UPLOAD FRONTPAGE BANNER |
+  | UPLOAD FRONTPAGE BANNER |
 
     // Firestore method --> 
       Future uploadByAdminRights(
@@ -55,4 +55,49 @@
           adType: 'frontPageBanner',
         );
       }
+
+    | GIVING DISCOUNTS |
+
+      // Firestore method -->
+      
+        Future uploadByAdminRights(DiscountAdModel discountAdModel) async {
+          try {
+
+            var isDiscountAvailable = await firestore
+                .collection('discount_ad')
+                .doc(discountAdModel.percentage.toString())
+                .get();
+            if (isDiscountAvailable.data() == null) {
+              //create that discount
+              await firestore
+                  .collection('discount_ad')
+                  .doc(discountAdModel.percentage.toString())
+                  .set({
+                'products': [discountAdModel.toJson()],
+              });
+              log('Creating a discount..');
+            } else {
+              // add this product to the discount list -->
+              log('We have to add the product now!');
+              await firestore
+                  .collection('discount_ad')
+                  .doc(discountAdModel.percentage.toString())
+                  .update({
+                'products': FieldValue.arrayUnion([discountAdModel.toJson()]),
+              });
+            }
+          } catch (e) {
+            log(
+              'Catch block in FirestoreController().adminRights(), ${e.toString()}',
+            );
+          }
+        }
+
+      // Function call in initState() of categories_list -->     
+        DiscountAdModel discountAdModel = DiscountAdModel(
+          percentage: 12,
+          productName: 'Bajaj Trimmer',
+          productId: 'xyz1234',
+        );
+        await C.firestoreController.uploadByAdminRights(discountAdModel);
   */

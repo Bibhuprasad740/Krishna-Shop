@@ -37,6 +37,7 @@ class ScreenLayoutState extends State<ScreenLayout> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(
+        physics: const NeverScrollableScrollPhysics(),
         controller: pageController,
         onPageChanged: updatePage,
         children: C.screens,
@@ -45,7 +46,7 @@ class ScreenLayoutState extends State<ScreenLayout> {
         onPressed: () {
           Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (_) => SearchScreen(),
+              builder: (_) => const SearchScreen(),
             ),
           );
         },

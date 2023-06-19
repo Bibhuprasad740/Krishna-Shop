@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:krishna_electronics/utilities/stock_colors.dart';
 import 'package:krishna_electronics/utilities/utility_functions.dart';
 
-import '../../models/front_page_banner_model.dart';
-import '../../utilities/constants.dart';
+import '../../../models/front_page_banner_model.dart';
+import '../../../utilities/constants.dart';
 
 class FrontPageBanner extends StatefulWidget {
   const FrontPageBanner({Key? key}) : super(key: key);
@@ -54,16 +54,15 @@ class FrontPageBannerState extends State<FrontPageBanner> {
                     fit: BoxFit.cover,
                   ),
                   Container(
-                    height: size.height * 0.6,
+                    height: size.height * 0.602,
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
-                        begin: Alignment.bottomCenter,
-                        end: Alignment.topCenter,
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
                         colors: [
                           SC.accent1.withOpacity(0.3),
                           Colors.transparent,
-                          Colors.transparent,
-                          SC.accent1.withOpacity(0.3),
+                          SC.background.withOpacity(0.99),
                         ],
                       ),
                     ),

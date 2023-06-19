@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:krishna_electronics/utilities/constants.dart';
-import 'package:krishna_electronics/utilities/stock_colors.dart';
-import 'package:krishna_electronics/views/widgets/utility_item.dart';
+
+import '../../../utilities/constants.dart';
+import './utility_item.dart';
 
 class UtilityField extends StatelessWidget {
   const UtilityField({Key? key}) : super(key: key);
@@ -10,7 +10,7 @@ class UtilityField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 10),
-      color: SC.accent2,
+      // color: SC.accent2,
       child: GridView.builder(
         shrinkWrap: true,
         physics: const NeverScrollableScrollPhysics(),
