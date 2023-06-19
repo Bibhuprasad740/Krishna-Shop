@@ -15,8 +15,9 @@ class UtilityItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: SC.accent2.withOpacity(0.9),
-          borderRadius: BorderRadius.circular(10)),
+        color: SC.accent1.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(10),
+      ),
       child: GestureDetector(
         onTap: onTap,
         child: Column(

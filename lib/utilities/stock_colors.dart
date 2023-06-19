@@ -5,7 +5,7 @@ class SC {
   static const accent1 = Colors.black;
   static const accent2 = Colors.white;
   static const accent3 = Colors.amber;
-  static const background = Color.fromARGB(255, 229, 228, 228);
+  static const background = Colors.white;
   static const border = Colors.grey;
   static const error = Color.fromARGB(255, 161, 13, 2);
   static const divider = Colors.grey;
@@ -24,7 +24,7 @@ class SC {
   //   Color.fromARGB(255, 200, 228, 218),
   // ];
   static const gradientLight = [
-    Color.fromARGB(255, 246, 217, 72),
-    Color.fromARGB(255, 232, 232, 60),
+    Color.fromARGB(255, 250, 226, 109),
+    Color.fromARGB(91, 169, 228, 79),
   ];
 }
