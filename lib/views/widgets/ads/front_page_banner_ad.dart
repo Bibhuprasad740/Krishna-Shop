@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:krishna_electronics/utilities/stock_colors.dart';
-import 'package:krishna_electronics/utilities/utility_functions.dart';
 
 import '../../../models/front_page_banner_model.dart';
 import '../../../utilities/constants.dart';
+import '../../../utilities/stock_colors.dart';
+import '../../../utilities/utility_functions.dart';
 
 class FrontPageBanner extends StatefulWidget {
   const FrontPageBanner({Key? key}) : super(key: key);

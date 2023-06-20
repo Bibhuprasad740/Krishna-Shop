@@ -1,9 +1,8 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:krishna_electronics/models/discount_ad_model.dart';
-import 'package:krishna_electronics/utilities/stock_colors.dart';
-import 'package:krishna_electronics/utilities/utility_functions.dart';
+
+import '../../../models/discount_ad_model.dart';
+import '../../../utilities/stock_colors.dart';
+import '../../../utilities/utility_functions.dart';
 
 class ProductAd extends StatelessWidget {
   final DiscountAdModel discountAdModel;

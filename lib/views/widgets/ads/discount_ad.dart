@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:krishna_electronics/utilities/stock_colors.dart';
-import 'package:krishna_electronics/utilities/utility_functions.dart';
+
+import '../../../utilities/stock_colors.dart';
+import '../../../utilities/utility_functions.dart';
 
 class DiscountAd extends StatelessWidget {
   final String title;
@@ -19,16 +20,17 @@ class DiscountAd extends StatelessWidget {
       margin: const EdgeInsets.only(top: 20),
       width: size.width * 0.96,
       decoration: BoxDecoration(
-          color: SC.accent2,
-          borderRadius: BorderRadius.circular(5),
-          boxShadow: [
-            BoxShadow(
-              blurRadius: 5,
-              spreadRadius: 1,
-              color: SC.accent1.withOpacity(0.2),
-              offset: Offset(5, 5),
-            )
-          ]),
+        color: SC.accent2,
+        borderRadius: BorderRadius.circular(5),
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 5,
+            spreadRadius: 1,
+            color: SC.accent1.withOpacity(0.2),
+            offset: const Offset(5, 5),
+          )
+        ],
+      ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -53,8 +55,8 @@ class DiscountAd extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 10),
-          Container(
+          const SizedBox(height: 10),
+          SizedBox(
             height: size.height * 0.3,
             child: ListView(
               scrollDirection: Axis.horizontal,

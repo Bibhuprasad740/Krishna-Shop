@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:krishna_electronics/utilities/stock_colors.dart';
+
+import '../../../utilities/stock_colors.dart';
 
 class UtilityItem extends StatelessWidget {
   final String imageUrl, label;

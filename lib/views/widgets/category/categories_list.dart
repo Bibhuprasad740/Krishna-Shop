@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../models/category_model.dart';
 import '../../../utilities/constants.dart';
 import '../../../utilities/stock_colors.dart';
-import 'category_item.dart';
+import './category_item.dart';
 
 class CategoriesList extends StatefulWidget {
   const CategoriesList({Key? key}) : super(key: key);

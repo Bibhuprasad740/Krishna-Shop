@@ -3,10 +3,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import 'layout/screen_layout.dart';
-import 'utilities/stock_colors.dart';
-import 'views/screens/loading_screen.dart';
-import 'views/screens/splash_screen.dart';
+import './layout/screen_layout.dart';
+import './utilities/stock_colors.dart';
+import './views/screens/loading_screen.dart';
+import './views/screens/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

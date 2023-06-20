@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:krishna_electronics/utilities/constants.dart';
-import 'package:krishna_electronics/views/widgets/address_bar.dart';
-import 'package:krishna_electronics/views/widgets/ads/discount_ad.dart';
-import 'package:krishna_electronics/views/widgets/ads/product_ad.dart';
 
 import '../../../models/discount_ad_model.dart';
+import '../../../utilities/constants.dart';
+import '../../widgets/address_bar.dart';
+import '../../widgets/ads/discount_ad.dart';
 import '../../widgets/ads/front_page_banner_ad.dart';
+import '../../widgets/ads/product_ad.dart';
 import '../../widgets/category/categories_list.dart';
 import '../../widgets/utillity_widgets/utility_field.dart';
 
