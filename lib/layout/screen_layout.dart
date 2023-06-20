@@ -1,6 +1,7 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:krishna_electronics/views/widgets/custom_search_bar_widget.dart';
 
 import '../utilities/constants.dart';
 import '../utilities/stock_colors.dart';
@@ -35,38 +36,41 @@ class ScreenLayoutState extends State<ScreenLayout> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: PageView(
-        physics: const NeverScrollableScrollPhysics(),
-        controller: pageController,
-        onPageChanged: updatePage,
-        children: C.screens,
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (_) => const SearchScreen(),
-            ),
-          );
-        },
-        backgroundColor: SC.accent1,
-        child: const Icon(Icons.search),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      bottomNavigationBar: AnimatedBottomNavigationBar(
-        activeColor: Colors.amber,
-        inactiveColor: SC.accent2,
-        backgroundColor: SC.accent1,
-        onTap: updateTab,
-        icons: const [
-          Icons.home,
-          Icons.person,
-          FontAwesomeIcons.bagShopping,
-          Icons.density_medium,
-        ],
-        activeIndex: pageIndex,
-        gapLocation: GapLocation.center,
+    return SafeArea(
+      child: Scaffold(
+        appBar: CustomSearchBar(),
+        body: PageView(
+          physics: const NeverScrollableScrollPhysics(),
+          controller: pageController,
+          onPageChanged: updatePage,
+          children: C.screens,
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => const SearchScreen(),
+              ),
+            );
+          },
+          backgroundColor: SC.accent1,
+          child: const Icon(Icons.search),
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        bottomNavigationBar: AnimatedBottomNavigationBar(
+          activeColor: Colors.amber,
+          inactiveColor: SC.accent2,
+          backgroundColor: SC.accent1,
+          onTap: updateTab,
+          icons: const [
+            Icons.home,
+            Icons.person,
+            FontAwesomeIcons.bagShopping,
+            Icons.density_medium,
+          ],
+          activeIndex: pageIndex,
+          gapLocation: GapLocation.center,
+        ),
       ),
     );
   }

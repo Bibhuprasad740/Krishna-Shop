@@ -44,7 +44,6 @@ class KrishnaElectronics extends StatelessWidget {
             if (networkState.connectionState == ConnectionState.waiting) {
               return const LoadingScreen();
             } else if (networkState.hasData) {
-              // FirebaseAuth.instance.signOut();
               return const ScreenLayout();
             } else {
               return const SplashScreen();

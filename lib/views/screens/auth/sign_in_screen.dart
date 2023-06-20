@@ -152,11 +152,10 @@ class _SignInScreenState extends State<SignInScreen> {
                                 color: SC.accent1,
                                 onTap: signInUser,
                                 isLoading: isLoading,
-                                child: const Text('Sign-In'),
+                                title: 'Sign-In',
                               ),
                               Row(
                                 children: [
-                                  const CustomDivider(),
                                   const Text('Sign-In with '),
                                   SocialButton(
                                     icon: FontAwesomeIcons.google,
@@ -188,7 +187,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         CustomButton(
                           color: SC.accent1,
                           onTap: nativateToSignUpScreen,
-                          child: const Text('Create an account'),
+                          title: 'Create an account',
                         ),
                       ],
                     ),

@@ -16,7 +16,10 @@ class DiscountAd extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = Utils.getScreenSize(context);
     return Container(
-      padding: const EdgeInsets.all(10),
+      padding: const EdgeInsets.symmetric(
+        horizontal: 10,
+        vertical: 20,
+      ),
       margin: const EdgeInsets.only(top: 20),
       width: size.width * 0.96,
       decoration: BoxDecoration(

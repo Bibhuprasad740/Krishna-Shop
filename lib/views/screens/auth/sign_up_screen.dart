@@ -153,7 +153,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 color: SC.accent1,
                                 onTap: signUpUser,
                                 isLoading: isLoading,
-                                child: const Text('Sign-Up'),
+                                title: 'Sign-Up',
                               ),
                             ],
                           ),
@@ -170,7 +170,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           onTap: () {
                             Navigator.pop(context);
                           },
-                          child: const Text('Return to login'),
+                          title: 'Return to login',
                         ),
                       ],
                     ),

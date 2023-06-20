@@ -53,38 +53,46 @@ class CustomSearchBar extends StatelessWidget implements PreferredSizeWidget {
           SizedBox(
             width: size.width * 0.75,
             child: Container(
-              decoration: BoxDecoration(boxShadow: [
-                BoxShadow(
-                  color: SC.accent1.withOpacity(0.2),
-                  blurRadius: 8,
-                  spreadRadius: 1,
-                  offset: const Offset(2, 2),
-                ),
-              ]),
+              // decoration: BoxDecoration(
+              //   borderRadius: BorderRadius.circular(30),
+              //   boxShadow: [
+              //     BoxShadow(
+              //       color: SC.accent1.withOpacity(0.2),
+              //       blurRadius: 8,
+              //       spreadRadius: 1,
+              //       offset: const Offset(2, 2),
+              //     ),
+              //   ],
+              // ),
               child: TextField(
                 onTap: () => navigateToSearchScreen(context),
                 readOnly: isReadOnly,
+                autofocus: !isReadOnly,
                 decoration: InputDecoration(
                   fillColor: SC.accent2,
                   filled: true,
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(7),
+                    borderRadius: BorderRadius.circular(30),
                     borderSide: const BorderSide(
-                      color: SC.border,
-                      width: 1,
+                      width: 0,
+                      color: Colors.transparent,
                     ),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(7),
+                    borderRadius: BorderRadius.circular(30),
                     borderSide: const BorderSide(
-                      color: SC.border,
+                      // color: SC.accent3,
+                      color: Colors.transparent,
                       width: 1,
                     ),
                   ),
                   hintText: 'Search on Krishna shop',
                   hintStyle: const TextStyle(
-                    fontSize: 18,
+                    fontSize: 16,
                     color: SC.border,
+                  ),
+                  contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 20,
                   ),
                 ),
               ),
