@@ -1,8 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:krishna_electronics/utilities/stock_colors.dart';
-import 'package:krishna_electronics/views/widgets/custom_button.dart';
-import 'package:krishna_electronics/views/widgets/simple_button.dart';
+
+import '../../../utilities/stock_colors.dart';
+import '../../widgets/custom_button.dart';
+import '../../widgets/simple_button.dart';
 
 class AccountScreen extends StatelessWidget {
   const AccountScreen({Key? key}) : super(key: key);
@@ -11,7 +12,27 @@ class AccountScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: SC.accent2,
+          elevation: 0,
+          title: const Text(
+            'My Account',
+            style: TextStyle(
+              color: SC.accent1,
+            ),
+          ),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.search,
+                color: SC.accent1,
+              ),
+            ),
+          ],
+        ),
         body: Container(
+          // alignment: Alignment.center,
           margin: const EdgeInsets.symmetric(
             horizontal: 10,
             vertical: 20,
@@ -19,7 +40,6 @@ class AccountScreen extends StatelessWidget {
           padding: const EdgeInsets.all(5),
           child: SingleChildScrollView(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
               children: [
                 SimpleButton(

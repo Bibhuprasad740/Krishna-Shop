@@ -14,7 +14,10 @@ class AddressBar extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = Utils.getScreenSize(context);
     return Container(
-      padding: const EdgeInsets.all(10),
+      padding: const EdgeInsets.symmetric(
+        horizontal: 10,
+        vertical: 5,
+      ),
       width: size.width,
       decoration: const BoxDecoration(
         gradient: LinearGradient(
@@ -36,6 +39,17 @@ class AddressBar extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               style: TextStyle(color: SC.accent1),
             ),
+          ),
+          Spacer(),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: SC.accent1,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30),
+              ),
+            ),
+            onPressed: () {},
+            child: Text('Change'),
           ),
         ],
       ),

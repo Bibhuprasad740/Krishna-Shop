@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../controllers/auth_controller.dart';
 import '../controllers/firestore_controller.dart';
 import '../views/screens/home/account_screen.dart';
+import '../views/screens/home/cart_screen.dart';
 import '../views/screens/home/home_screen.dart';
 import '../views/screens/home/more_screen.dart';
 
@@ -18,7 +19,7 @@ class C {
   static const List<Widget> screens = [
     HomeScreen(),
     AccountScreen(),
-    Center(child: Text('Cart Screen')),
+    CartScreen(),
     MoreScreen(),
   ];
 

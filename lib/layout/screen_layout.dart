@@ -1,7 +1,7 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:krishna_electronics/views/widgets/custom_search_bar_widget.dart';
 
 import '../utilities/constants.dart';
 import '../utilities/stock_colors.dart';
@@ -38,7 +38,6 @@ class ScreenLayoutState extends State<ScreenLayout> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: CustomSearchBar(),
         body: PageView(
           physics: const NeverScrollableScrollPhysics(),
           controller: pageController,
@@ -48,7 +47,7 @@ class ScreenLayoutState extends State<ScreenLayout> {
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             Navigator.of(context).push(
-              MaterialPageRoute(
+              CupertinoPageRoute(
                 builder: (_) => const SearchScreen(),
               ),
             );
