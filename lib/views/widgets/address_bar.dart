@@ -40,7 +40,7 @@ class AddressBar extends StatelessWidget {
               style: TextStyle(color: SC.accent1),
             ),
           ),
-          Spacer(),
+          const Spacer(),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               backgroundColor: SC.accent1,
@@ -49,7 +49,7 @@ class AddressBar extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: Text('Change'),
+            child: const Text('Change'),
           ),
         ],
       ),

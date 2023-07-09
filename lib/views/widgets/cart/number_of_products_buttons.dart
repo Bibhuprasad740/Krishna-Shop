@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../../../utilities/stock_colors.dart';
 
-class AmountButton extends StatelessWidget {
+class NumberOfProductsButton extends StatelessWidget {
   final int amount;
-  const AmountButton({
+  const NumberOfProductsButton({
     Key? key,
     required this.amount,
   }) : super(key: key);

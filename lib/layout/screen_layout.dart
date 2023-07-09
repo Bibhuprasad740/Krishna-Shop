@@ -48,7 +48,9 @@ class ScreenLayoutState extends State<ScreenLayout> {
           onPressed: () {
             Navigator.of(context).push(
               CupertinoPageRoute(
-                builder: (_) => const SearchScreen(),
+                builder: (_) => const SearchScreen(
+                  query: '',
+                ),
               ),
             );
           },

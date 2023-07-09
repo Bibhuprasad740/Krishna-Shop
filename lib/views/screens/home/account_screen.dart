@@ -24,7 +24,7 @@ class AccountScreen extends StatelessWidget {
           actions: [
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.search,
                 color: SC.accent1,
               ),

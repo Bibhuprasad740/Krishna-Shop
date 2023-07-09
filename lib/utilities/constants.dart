@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../controllers/auth_controller.dart';
 import '../controllers/firestore_controller.dart';
+import '../models/product_model.dart';
 import '../views/screens/home/account_screen.dart';
 import '../views/screens/home/cart_screen.dart';
 import '../views/screens/home/home_screen.dart';
@@ -86,4 +87,17 @@ class C {
 //Dont even attemp to scroll to the end of this manually lmao
   static const String amazonLogo =
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png";
+
+  // demo product
+  static var demoProduct = ProductModel(
+    imgUrl: 'https://m.media-amazon.com/images/I/51QISbJp5-L._SX3000_.jpg',
+    productName: 'MacBook',
+    cost: 1299,
+    discount: 23,
+    uid: 'something',
+    sellerName: 'Krishna',
+    sellerUid: 'else_id',
+    rating: 1,
+    noOfRating: 1,
+  );
 }

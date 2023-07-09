@@ -1,9 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../utilities/constants.dart';
-import '../../utilities/stock_colors.dart';
-import '../../utilities/utility_functions.dart';
-import '../screens/home/search_screen.dart';
+import '../../../utilities/constants.dart';
+import '../../../utilities/stock_colors.dart';
+import '../../../utilities/utility_functions.dart';
+import '../../screens/home/search_screen.dart';
 
 class CustomSearchBar extends StatelessWidget implements PreferredSizeWidget {
   final bool isReadOnly, hasBackButton;
@@ -21,7 +22,7 @@ class CustomSearchBar extends StatelessWidget implements PreferredSizeWidget {
     if (isReadOnly) {
       Navigator.of(context).push(
         MaterialPageRoute(
-          builder: (_) => const SearchScreen(),
+          builder: (_) => const SearchScreen(query: ''),
         ),
       );
     }
@@ -65,6 +66,13 @@ class CustomSearchBar extends StatelessWidget implements PreferredSizeWidget {
               //   ],
               // ),
               child: TextField(
+                onSubmitted: (String query) {
+                  Navigator.of(context).pushReplacement(
+                    CupertinoPageRoute(
+                      builder: (_) => SearchScreen(query: query),
+                    ),
+                  );
+                },
                 onTap: () => navigateToSearchScreen(context),
                 readOnly: isReadOnly,
                 autofocus: !isReadOnly,

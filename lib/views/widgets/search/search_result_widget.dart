@@ -3,14 +3,12 @@ import 'package:flutter/material.dart';
 import '../../../models/product_model.dart';
 import '../../../utilities/stock_colors.dart';
 import '../../../utilities/utility_functions.dart';
+import '../cart/review_star.dart';
 import '../cost_widget.dart';
-import './review_star.dart';
-import 'number_of_products_buttons.dart';
-import './cart_utility_button.dart';
 
-class CartItem extends StatelessWidget {
+class SearchResultWidget extends StatelessWidget {
   final ProductModel product;
-  const CartItem({
+  const SearchResultWidget({
     Key? key,
     required this.product,
   }) : super(key: key);
@@ -78,37 +76,13 @@ class CartItem extends StatelessWidget {
                             (product.cost * product.discount / 100),
                       ),
                       const SizedBox(width: 20),
-                      // Quantity button
-                      const NumberOfProductsButton(amount: 1),
                     ],
                   ),
                 ],
               )
             ],
           ),
-
-          const SizedBox(height: 50),
-          // bottom 3 buttons
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              CartUtilityButton(
-                label: 'Remove',
-                icon: Icons.delete,
-                opacity: 0.7,
-              ),
-              CartUtilityButton(
-                label: 'Save',
-                icon: Icons.favorite,
-                opacity: 0.7,
-              ),
-              CartUtilityButton(
-                label: 'Buy Now',
-                icon: Icons.shopping_bag,
-                opacity: 0.7,
-              ),
-            ],
-          ),
+          // const SizedBox(height: 50),
         ],
       ),
     );
